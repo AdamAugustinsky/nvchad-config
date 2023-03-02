@@ -6,7 +6,7 @@ local M = {}
 
 M.ui = {
   theme_toggle = { "onedark", "one_light" },
-  theme = "onedark",
+  theme = "gruvchad",
   -- hl_override = highlights.override,
   -- hl_add = highlights.add,
 
