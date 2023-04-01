@@ -5,13 +5,13 @@ M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
     ["<leader>gg"] = { ":LazyGit<CR>", "open LazyGit in a floating terminal window", opts = { nowait = true } },
+    ["<leader>ps"] = { ":PackerSync<CR>", "PackerSync", opts = { nowait = true } },
     -- ["<leader>P"] = {
     --   ":lua require'telescope'.extensions.projects.projects{}<CR>",
     --   "recently opened projects in telescope",
     -- },
   },
 }
-
 
 M.telescope = {
   plugin = true,

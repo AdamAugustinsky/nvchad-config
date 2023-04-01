@@ -56,6 +56,17 @@ local plugins = {
     end,
   },
 
+  ["github/copilot.vim"] = {
+    config = function()
+      vim.cmd [[
+            let g:copilot_no_tab_map = v:true
+         ]]
+    end,
+  },
+  ["hrsh7th/cmp-copilot"] = {
+    after = "nvim-cmp",
+  },
+
   -- remove plugin
   -- ["hrsh7th/cmp-path"] = false,
 }
