@@ -8,7 +8,7 @@ M.treesitter = {
     "css",
     "javascript",
     "typescript",
-    "jsx",
+    "javascriptreact",
     "tsx",
     "svelte",
     "c",
@@ -32,6 +32,7 @@ M.mason = {
     "eslint_d",
     "svelte-language-server",
     "vim-language-server",
+    "tailwindcss-language-server",
 
     -- shell
     "shfmt",
@@ -44,7 +45,9 @@ M.nvimtree = {
   git = {
     enable = true,
   },
-
+  view = {
+    side = "right",
+  },
   renderer = {
     highlight_git = true,
     icons = {
