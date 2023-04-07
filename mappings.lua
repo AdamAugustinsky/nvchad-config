@@ -6,10 +6,17 @@ M.general = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
     ["<leader>gg"] = { ":LazyGit<CR>", "open LazyGit in a floating terminal window", opts = { nowait = true } },
     ["<leader>ps"] = { ":PackerSync<CR>", "PackerSync", opts = { nowait = true } },
+    ["<leader>gd"] = { ":DiffviewFileHistory<CR>", "[G]it [D]iff", opts = { nowait = true } },
+    ["<leader>fd"] = { ":DiffviewFileHistory %<CR>", "Git [F]ile [D]iff", opts = { nowait = true } },
+    ["<leader>gc"] = { ":DiffviewClose<CR>", "Diffview Close", opts = { nowait = true } },
+    ["<C-Space>"] = { ":Copilot panel<CR>", "Copilot Panel", opts = { nowait = true } },
     -- ["<leader>P"] = {
     --   ":lua require'telescope'.extensions.projects.projects{}<CR>",
     --   "recently opened projects in telescope",
     -- },
+  },
+  i = {
+    ["<C-i>"] = { 'copilot#Accept("<CR>")', "Copilot Accept", opts = { expr = true, silent = true } },
   },
 }
 

@@ -67,6 +67,10 @@ local plugins = {
     after = "nvim-cmp",
   },
 
+  ["sindrets/diffview.nvim"] = {
+    requires = "nvim-lua/plenary.nvim",
+  },
+
   -- remove plugin
   -- ["hrsh7th/cmp-path"] = false,
 }
