@@ -8,7 +8,8 @@ M.treesitter = {
     "css",
     "javascript",
     "typescript",
-    "javascriptreact",
+    "ocaml",
+    "ocaml_interface",
     "tsx",
     "svelte",
     "c",
@@ -37,6 +38,10 @@ M.mason = {
     -- shell
     "shfmt",
     "shellcheck",
+
+    -- FP
+    "ocaml-lsp",
+    "ocamlformat",
   },
 }
 

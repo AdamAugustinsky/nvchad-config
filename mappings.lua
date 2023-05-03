@@ -16,7 +16,7 @@ M.general = {
     -- },
   },
   i = {
-    ["<C-i>"] = { 'copilot#Accept("<CR>")', "Copilot Accept", opts = { expr = true, silent = true } },
+    ["<M-Enter>"] = { 'copilot#Accept("<CR>")', "Copilot Accept", opts = { expr = true, silent = true } },
   },
 }
 
