@@ -16,7 +16,11 @@ M.general = {
     -- },
   },
   i = {
-    ["<M-Enter>"] = { 'copilot#Accept("<CR>")', "Copilot Accept", opts = { expr = true, silent = true } },
+    ["<M-Enter>"] = {
+      'copilot#Accept("<CR>")',
+      "Copilot Accept",
+      opts = { noremap = true, silent = true, expr = true, replace_keycodes = false },
+    },
   },
 }
 
