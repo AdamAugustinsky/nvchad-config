@@ -1,11 +1,11 @@
----@type MappingsConfig
+---@type MappingsTable
 local M = {}
 
 M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
     ["<leader>gg"] = { ":LazyGit<CR>", "open LazyGit in a floating terminal window", opts = { nowait = true } },
-    ["<leader>ps"] = { ":PackerSync<CR>", "PackerSync", opts = { nowait = true } },
+    ["<leader>ps"] = { ":Lazy sync<CR>", "PackerSync", opts = { nowait = true } },
     ["<leader>gd"] = { ":DiffviewFileHistory<CR>", "[G]it [D]iff", opts = { nowait = true } },
     ["<leader>fd"] = { ":DiffviewFileHistory %<CR>", "Git [F]ile [D]iff", opts = { nowait = true } },
     ["<leader>gc"] = { ":DiffviewClose<CR>", "Diffview Close", opts = { nowait = true } },
