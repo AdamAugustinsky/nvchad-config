@@ -53,6 +53,7 @@ local plugins = {
   { import = "custom.configs.extras.symbols-outline" },
   { import = "custom.configs.extras.trouble" },
   { import = "custom.configs.extras.lazygit" },
+  { import = "custom.configs.extras.project" },
 
   -- To make a plugin not be loaded
   -- {
