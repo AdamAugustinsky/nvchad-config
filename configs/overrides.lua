@@ -59,6 +59,11 @@ M.nvimtree = {
       show = {
         git = true,
       },
+      glyphs = {
+        folder = {
+          default = "",
+        },
+      },
     },
   },
   sync_root_with_cwd = true,
@@ -72,7 +77,6 @@ M.nvimtree = {
 M.telescope = {
   config = function()
     require "custom.plugins.telescope"
-    require "plugins.configs.telescope"
   end,
   extensions = {
     project = {
