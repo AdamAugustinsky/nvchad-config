@@ -59,11 +59,6 @@ M.nvimtree = {
       show = {
         git = true,
       },
-      glyphs = {
-        folder = {
-          default = "",
-        },
-      },
     },
   },
   sync_root_with_cwd = true,
