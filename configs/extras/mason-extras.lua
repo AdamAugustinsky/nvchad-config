@@ -5,13 +5,56 @@ local setup = function(_, opts)
   local lspconfig = require "lspconfig"
 
   -- List of servers to install
-  local servers = { "html", "cssls", "tsserver", "clangd" }
+  local servers = {
+    "html",
+    "cssls",
+    "tsserver",
+    "clangd",
+    "svelte",
+    "lua_ls",
+    -- "ocamllsp",
+    -- "denols",
+    "emmet_ls",
+    "jsonls",
+    "vimls",
+    "bashls",
+    "tailwindcss",
+  }
+
+  -- opts.ensure_installed = {
+  --   -- lua stuff
+  --   "lua-language-server",
+  --   "stylua",
+  --
+  --   -- web dev
+  --   "css-lsp",
+  --   "html-lsp",
+  --   "typescript-language-server",
+  --   "deno",
+  --   "emmet-ls",
+  --   "json-lsp",
+  --   "prettierd",
+  --   "eslint_d",
+  --   "svelte-language-server",
+  --   "vim-language-server",
+  --   "tailwindcss-language-server",
+  --
+  --   -- shell
+  --   "shfmt",
+  --   "shellcheck",
+  --
+  --   -- FP
+  --   "ocaml-lsp",
+  --   "ocamlformat",
+  -- }
 
   require("mason").setup(opts)
 
   require("mason-lspconfig").setup {
     ensure_installed = servers,
   }
+
+  -- List of formatters to install
 
   -- This will setup lsp for servers you listed above
   -- And servers you install through mason UI
@@ -75,34 +118,6 @@ local spec = {
     },
     "williamboman/mason-lspconfig",
     -- TODO: Add mason-null-ls? mason-dap?
-  },
-  opts = {
-    ensure_installed = {
-      -- lua stuff
-      "lua-language-server",
-      "stylua",
-
-      -- web dev
-      "css-lsp",
-      "html-lsp",
-      "typescript-language-server",
-      "deno",
-      "emmet-ls",
-      "json-lsp",
-      "prettierd",
-      "eslint_d",
-      "svelte-language-server",
-      "vim-language-server",
-      "tailwindcss-language-server",
-
-      -- shell
-      "shfmt",
-      "shellcheck",
-
-      -- FP
-      "ocaml-lsp",
-      "ocamlformat",
-    },
   },
 }
 
