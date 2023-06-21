@@ -24,6 +24,10 @@ local spec = {
       },
     },
   },
+  {
+    "hrsh7th/cmp-copilot",
+    after = "nvim-cmp",
+  },
 }
 
 return spec

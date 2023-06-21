@@ -29,7 +29,7 @@ M.telescope = {
 
   n = {
     ["<leader>P"] = {
-      "<cmd> lua require'telescope'.extensions.projects.projects{}<CR>",
+      ":Telescope projects<CR>",
       "recently opened projects in telescope",
     },
     -- -- find
