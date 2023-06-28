@@ -62,10 +62,4 @@ M.telescope = {
   },
 }
 
-M.cmp = {
-  mapping = {
-    ["<Tab>"] = {},
-  },
-}
-
 return M
