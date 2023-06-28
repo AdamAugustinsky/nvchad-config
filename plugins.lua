@@ -38,6 +38,11 @@ local plugins = {
     opts = overrides.nvimtree,
   },
 
+  {
+    "hrsh7th/nvim-cmp",
+    opts = overrides.cmp,
+  },
+
   -- Install a plugin
   {
     "max397574/better-escape.nvim",
@@ -54,6 +59,9 @@ local plugins = {
   { import = "custom.configs.extras.trouble" },
   { import = "custom.configs.extras.lazygit" },
   { import = "custom.configs.extras.project" },
+  {
+    "tpope/vim-fugitive",
+  },
 
   -- To make a plugin not be loaded
   -- {

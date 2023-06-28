@@ -10,17 +10,6 @@ M.general = {
     ["<leader>fd"] = { ":DiffviewFileHistory %<CR>", "Git [F]ile [D]iff", opts = { nowait = true } },
     ["<leader>gc"] = { ":DiffviewClose<CR>", "Diffview Close", opts = { nowait = true } },
     ["<C-Space>"] = { ":Copilot panel<CR>", "Copilot Panel", opts = { nowait = true } },
-    -- ["<leader>P"] = {
-    --   ":lua require'telescope'.extensions.projects.projects{}<CR>",
-    --   "recently opened projects in telescope",
-    -- },
-  },
-  i = {
-    ["<M-Enter>"] = {
-      'copilot#Accept("<CR>")',
-      "Copilot Accept",
-      opts = { noremap = true, silent = true, expr = true, replace_keycodes = false },
-    },
   },
 }
 
